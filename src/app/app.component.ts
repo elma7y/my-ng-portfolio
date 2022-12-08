@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  constructor() {
-    localStorage.setItem('theme', 'dark');
+export class AppComponent implements OnInit {
+  constructor() {}
+  ngOnInit(): void {
+    if (localStorage.getItem('theme') == 'white') {
+      this.darkmode();
+    } else {
+      this.lightmode();
+    }
   }
-
   darkmode() {
+    localStorage.setItem('theme', 'white');
     let dark = document.getElementById('dark');
     let light = document.getElementById('light');
     if (dark) {
@@ -19,7 +24,6 @@ export class AppComponent {
         light.style.visibility = 'visible';
       }
     }
-    localStorage.setItem('theme', 'white');
     if (localStorage.getItem('theme') == 'white') {
       document.documentElement.style.setProperty('--background-color', '#111');
       document.documentElement.style.setProperty('--white', 'white');
@@ -36,9 +40,12 @@ export class AppComponent {
         '--shading',
         'hsla(0, 0%, 100%, 0.07)'
       );
+      document.documentElement.style.setProperty('--border-color', '#252525');
+      document.documentElement.style.setProperty('--span-color', '#fff');
     }
   }
   lightmode() {
+    localStorage.setItem('theme', 'dark');
     let dark = document.getElementById('dark');
     let light = document.getElementById('light');
     if (light) {
@@ -47,7 +54,6 @@ export class AppComponent {
         dark.style.visibility = 'visible';
       }
     }
-    localStorage.setItem('theme', 'dark');
     if (localStorage.getItem('theme') == 'dark') {
       document.documentElement.style.setProperty('--background-color', '#fff');
       document.documentElement.style.setProperty('--white', 'black');
@@ -67,6 +73,8 @@ export class AppComponent {
         '--shading',
         'rgba(30,37,48,.07)'
       );
+      document.documentElement.style.setProperty('--border-color', '#ddd');
+      document.documentElement.style.setProperty('--span-color', '#666');
     }
   }
 }

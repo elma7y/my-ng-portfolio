@@ -176,7 +176,7 @@ button:hover::before {
     border-radius: 50%;
     width: 270px;
     height: 270px;
-    border: 4px solid #252525;
+    border: 4px solid var(--border-color);
     margin: 0 auto 25px;
   }
   .content {

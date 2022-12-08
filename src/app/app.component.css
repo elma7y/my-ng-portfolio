@@ -11,7 +11,7 @@
 }
 .switch {
   z-index: 9998;
-  position: absolute;
+  position: fixed;
   right: 30px;
   top: 5%;
   transform: translateY(-5%);
