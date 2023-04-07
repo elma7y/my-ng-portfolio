@@ -1,0 +1,26 @@
+<section class="portfolio">
+  <div
+    class="title text-uppercase text-start text-sm-center d-flex justify-content-start justify-content-lg-center justify-content-md-center align-items-center gap-4"
+  >
+    <h1>my</h1>
+    <span class="me">portfolio</span>
+    <span class="title-bg">Works</span>
+  </div>
+  <div class="tabs">
+    <ul
+      class="d-flex flex-wrap justify-lg-center justify-content-md-center justify-content-start align-items-center text-uppercase"
+    >
+      <li routerLink="all" routerLinkActive="active">All</li>
+      <li routerLink="angular-projects" routerLinkActive="active">
+        angular projects
+      </li>
+      <li routerLink="javascript-projects" routerLinkActive="active">
+        javascript projects
+      </li>
+      <li routerLink="templates" routerLinkActive="active">templates</li>
+    </ul>
+  </div>
+  <div class="container pb-5">
+    <router-outlet></router-outlet>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+<section class="main">
+  <app-sidenav class="side"></app-sidenav>
+  <div class="switch">
+    <span (click)="lightmode()" id="light" class="light"
+      ><i class="bi bi-sun"></i
+    ></span>
+    <span (click)="darkmode()" id="dark" class="dark"
+      ><i class="bi bi-moon"></i
+    ></span>
+  </div>
+  <router-outlet></router-outlet>
+  <ngx-cursor [cursor]="false" color="#ff8500" size="30px" [zindex]="9999">
+  </ngx-cursor>
+</section>

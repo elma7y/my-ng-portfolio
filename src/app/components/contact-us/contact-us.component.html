@@ -1,0 +1,131 @@
+<section class="contact">
+  <div
+    class="title text-uppercase text-start text-sm-center d-flex justify-content-start justify-content-lg-center justify-content-md-center align-items-center gap-4"
+  >
+    <h1>get in</h1>
+    <span class="me">touch</span>
+    <span class="title-bg">Contact</span>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 contact-info">
+        <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
+          don't be shy !
+        </h3>
+        <p class="mb-4 touch">
+          Feel free to get in touch with me. I am always open to discussing new
+          projects, creative ideas or opportunities to be part of your visions.
+        </p>
+        <p class="custom-span-contact position-relative">
+          <i class="bi bi-map-fill"></i>
+          <span class="text-uppercase d-block">adress point</span>
+          87 Al-Gazaer St. Al-Manshia, Alexandria, Egypt.
+        </p>
+        <p class="custom-span-contact position-relative">
+          <i class="bi bi-envelope-open-fill"></i>
+          <span class="text-uppercase d-block">mail me</span>
+          elma7y1996@gmail.com
+        </p>
+        <p class="custom-span-contact position-relative">
+          <i class="bi bi-telephone-fill"></i>
+          <span class="text-uppercase d-block">call me</span>
+          01287503160
+        </p>
+        <ul class="social list-unstyled mb-5">
+          <li>
+            <a href="https://www.facebook.com/sameh.elma7y" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/sameh123soliman" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCpzcltrma3nfxe_Q5VzHxJA"
+              target="_blank"
+            >
+              <i class="bi bi-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sameh123/" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/elma7y" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.link/cq0p89" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-8">
+        <form [formGroup]="message" (ngSubmit)="sendMessage()">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="form-group d-flex flex-column">
+                <input
+                  type="text"
+                  placeholder="YOUR NAME"
+                  formControlName="name"
+                />
+                <span [ngClass]="namevalidstyle" class="valid pt-2">{{
+                  namevalidmsg
+                }}</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group d-flex flex-column">
+                <input
+                  type="email"
+                  placeholder="YOUR EMAIL"
+                  formControlName="email"
+                />
+                <span [ngClass]="emailvalidstyle" class="valid pt-2">{{
+                  emailvalidmsg
+                }}</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-12">
+              <div class="form-group d-flex flex-column">
+                <input
+                  type="text"
+                  placeholder="YOUR SUBJECT"
+                  formControlName="subject"
+                />
+                <span [ngClass]="subjectvalidstyle" class="valid pt-2">{{
+                  subjectvalidmsg
+                }}</span>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group d-flex flex-column">
+                <textarea
+                  placeholder="YOUR MESSAGE"
+                  formControlName="msg"
+                ></textarea>
+                <span [ngClass]="msgvalidstyle" class="valid pt-2">{{
+                  msgvalidmsg
+                }}</span>
+              </div>
+            </div>
+            <div class="col-12 last">
+              <button [disabled]="message.invalid">
+                <span class="button-text text-uppercase">send message</span>
+                <span class="button-icon bi bi-send-fill"></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

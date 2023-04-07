@@ -1,0 +1,93 @@
+.row .box .content img {
+  width: 416px;
+  height: 265px;
+  border-radius: 13px;
+}
+.row .box .content {
+  position: relative;
+}
+.row .box .content::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-colorop);
+  visibility: hidden;
+  transition: 0.5s;
+  border-radius: 13px;
+}
+.row .box .content h3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  color: var(--white);
+  text-align: center;
+}
+.row .box .content:hover h3 {
+  visibility: visible;
+  opacity: 1;
+}
+.row .box .content:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+.row .box .content ul {
+  padding: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  color: var(--white);
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 60px;
+  text-transform: uppercase;
+}
+.row .box .content:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-content {
+  background-color: var(--background-color);
+}
+.modal-header h1 {
+  color: var(--main-color);
+}
+.modal-header button {
+  background-color: var(--main-color);
+}
+.modal-body .prof-info {
+  font-family: Open Sans, sans-serif;
+}
+.modal-body .col-12 {
+  color: var(--white);
+}
+.col-12 .preview-link {
+  color: var(--main-color);
+  text-decoration: underline;
+  font-size: 15px;
+  font-weight: 600;
+}
+.proj-pics .carousel-indicators button {
+  background-color: var(--main-color);
+}
+.carousel-inner img {
+  height: 600px !important;
+}
+.javas {
+  animation: faderight 1.2s ease;
+}
+/* animations */
+@keyframes faderight {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0);
+  }
+}
