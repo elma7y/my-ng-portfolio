@@ -12,7 +12,7 @@ export class AngularProjetcsComponent {
     window.open('https://github.com/elma7y/sameh-ecommerce', '_blank');
   }
   liveEcommerce() {
-    window.open('https://elma7y.github.io/sameh-ecommerce/', '_blank');
+    window.open('https://sameh-ecommerce.vercel.app/', '_blank');
   }
   sourceDashboard() {
     window.open('https://github.com/elma7y/angular-dashboard', '_blank');

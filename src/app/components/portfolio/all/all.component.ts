@@ -13,7 +13,7 @@ export class AllComponent {
     window.open('https://github.com/elma7y/sameh-ecommerce', '_blank');
   }
   liveEcommerce() {
-    window.open('https://elma7y.github.io/sameh-ecommerce/', '_blank');
+    window.open('https://sameh-ecommerce.vercel.app/', '_blank');
   }
   sourceGithub() {
     window.open('https://github.com/elma7y/github-api', '_blank');
