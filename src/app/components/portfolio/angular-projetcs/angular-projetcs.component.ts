@@ -18,7 +18,10 @@ export class AngularProjetcsComponent {
     window.open('https://github.com/elma7y/angular-dashboard', '_blank');
   }
   liveDashboard() {
-    window.open('https://elma7y.github.io/angular-dashboard/', '_blank');
+    window.open(
+      'https://angular-dashboard-av3v9x2s2-elma7y.vercel.app/',
+      '_blank'
+    );
   }
   sourceDashboardAirtable() {
     window.open('https://kevin-dashboard.vercel.app/', '_blank');
