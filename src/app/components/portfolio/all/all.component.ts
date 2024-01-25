@@ -108,4 +108,28 @@ export class AllComponent {
   liveDashboardpopup() {
     window.open('https://popup.mypmclaim.com/', '_blank');
   }
+  sourceRebamppopup() {
+    window.open('https://re-bamp.vercel.app/', '_blank');
+  }
+  liveRebamppopup() {
+    window.open('https://re-bamp.vercel.app/', '_blank');
+  }
+  sourceJamfulpopup() {
+    window.open('https://jamfulapp.com/', '_blank');
+  }
+  liveJamfulpopup() {
+    window.open('https://jamfulapp.com/', '_blank');
+  }
+  sourcezenuppopup() {
+    window.open('https://zenup.vercel.app/', '_blank');
+  }
+  livezenuppopup() {
+    window.open('https://zenup.vercel.app/', '_blank');
+  }
+  sourcemapspopup() {
+    window.open('https://searchmymaps.com/', '_blank');
+  }
+  livemapspopup() {
+    window.open('https://searchmymaps.com/', '_blank');
+  }
 }

@@ -4,6 +4,882 @@
       <div class="content angular d-flex justify-content-center">
         <img
           class="img-fluid"
+          src="../../../../assets/images/searchmymaps/FireShot Capture 423 - searchmymaps - searchmymaps.com.png"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">SearchMyMaps</h3>
+        <ul class="d-flex fs-4">
+          <li
+            class="d-flex flex-column align-items-center"
+            data-bs-toggle="modal"
+            data-bs-target="#maps"
+          >
+            <i class="bi bi-info-circle-fill"></i>
+            info
+          </li>
+          <li
+            (click)="sourcemapspopup()"
+            class="d-flex flex-column align-items-center"
+          >
+            <i class="bi bi-file-code-fill"></i>code
+          </li>
+          <li
+            (click)="livemapspopup()"
+            class="d-flex flex-column align-items-center"
+          >
+            <i class="bi bi-eye-fill"></i> live
+          </li>
+        </ul>
+        <div
+          class="modal fade"
+          id="maps"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center text-uppercase">
+                <h1 class="modal-title fs-4 fs-3 w-100" id="exampleModalLabel">
+                  SearchMyMaps
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row proj-info">
+                  <div class="col-12 col-sm-6 mb-2 text-center">
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                    Project:
+                    <span class="text-uppercase fw-bold">SearchMyMaps</span>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-2 text-center">
+                    <i class="bi bi-person"></i>
+                    Client: Upwork Client
+                    <span class="text-uppercase fw-bold">Upwork Client</span>
+                  </div>
+                  <div class="col-12 col-sm-12 mb-2 text-center">
+                    <div>
+                      <i class="bi bi-code-slash"></i>
+                      Tech:
+                    </div>
+                    <span class="text-uppercase fw-bold"
+                      >Html,Sass,Angular,Bootstrap,primeNg,AWS (VPS)</span
+                    >
+                  </div>
+                  <div class="col-12 col-sm-12 mb-2 text-center">
+                    <div>
+                      <i class="bi bi-box-arrow-up-right"></i>
+                      Preview:
+                    </div>
+                    <a
+                      class="preview-link"
+                      target="_blank"
+                      href="https://searchmymaps.com/"
+                      >www.searchmymaps.com</a
+                    >
+                  </div>
+                </div>
+                <div class="row proj-pics">
+                  <div
+                    id="search"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#search"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#search"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#search"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#search"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#search"
+                        data-bs-slide-to="4"
+                        aria-label="Slide 5"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#search"
+                        data-bs-slide-to="5"
+                        aria-label="Slide 6"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#search"
+                        data-bs-slide-to="6"
+                        aria-label="Slide 7"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/searchmymaps/1.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/searchmymaps/2.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/searchmymaps/3.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/searchmymaps/4.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/searchmymaps/5.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/searchmymaps/6.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/searchmymaps/7.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#search"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#search"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center">
+        <img
+          class="img-fluid"
+          src="../../../../assets/images/zenup/FireShot Capture 417 - Zenup - zenup.vercel.app.png"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Zenup-Dashboard</h3>
+        <ul class="d-flex fs-4">
+          <li
+            class="d-flex flex-column align-items-center"
+            data-bs-toggle="modal"
+            data-bs-target="#jamful"
+          >
+            <i class="bi bi-info-circle-fill"></i>
+            info
+          </li>
+          <li
+            (click)="sourcezenuppopup()"
+            class="d-flex flex-column align-items-center"
+          >
+            <i class="bi bi-file-code-fill"></i>code
+          </li>
+          <li
+            (click)="livezenuppopup()"
+            class="d-flex flex-column align-items-center"
+          >
+            <i class="bi bi-eye-fill"></i> live
+          </li>
+        </ul>
+        <div
+          class="modal fade"
+          id="jamful"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center text-uppercase">
+                <h1 class="modal-title fs-4 fs-3 w-100" id="exampleModalLabel">
+                  Zenup-Dashboard
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row proj-info">
+                  <div class="col-12 col-sm-6 mb-2 text-center">
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                    Project:
+                    <span class="text-uppercase fw-bold">Zenup-Dashboard</span>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-2 text-center">
+                    <i class="bi bi-person"></i>
+                    Client: Upwork Client
+                    <span class="text-uppercase fw-bold">Upwork Client</span>
+                  </div>
+                  <div class="col-12 col-sm-12 mb-2 text-center">
+                    <div>
+                      <i class="bi bi-code-slash"></i>
+                      Tech:
+                    </div>
+                    <span class="text-uppercase fw-bold"
+                      >Html,Sass,Angular,Bootstrap,primeNg,Airtable</span
+                    >
+                  </div>
+                  <div class="col-12 col-sm-12 mb-2 text-center">
+                    <div>
+                      <i class="bi bi-box-arrow-up-right"></i>
+                      Preview:
+                    </div>
+                    <a
+                      class="preview-link"
+                      target="_blank"
+                      href="https://zenup.vercel.app/"
+                      >www.zenup.vercel.app</a
+                    >
+                  </div>
+                </div>
+                <div class="row proj-pics">
+                  <div id="zen" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#zen"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#zen"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#zen"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#zen"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/zenup/1.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/zenup/2.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/zenup/3.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/zenup/4.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#zen"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#zen"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center">
+        <img
+          class="img-fluid"
+          src="../../../../assets/images/jamful/FireShot Capture 404 - Jamful - localhost.png"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Jamfulapp</h3>
+        <ul class="d-flex fs-4">
+          <li
+            class="d-flex flex-column align-items-center"
+            data-bs-toggle="modal"
+            data-bs-target="#jamful"
+          >
+            <i class="bi bi-info-circle-fill"></i>
+            info
+          </li>
+          <li
+            (click)="sourceJamfulpopup()"
+            class="d-flex flex-column align-items-center"
+          >
+            <i class="bi bi-file-code-fill"></i>code
+          </li>
+          <li
+            (click)="liveJamfulpopup()"
+            class="d-flex flex-column align-items-center"
+          >
+            <i class="bi bi-eye-fill"></i> live
+          </li>
+        </ul>
+        <div
+          class="modal fade"
+          id="jamful"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center text-uppercase">
+                <h1 class="modal-title fs-4 fs-3 w-100" id="exampleModalLabel">
+                  Jamfulapp
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row proj-info">
+                  <div class="col-12 col-sm-6 mb-2 text-center">
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                    Project:
+                    <span class="text-uppercase fw-bold">Jamfulapp</span>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-2 text-center">
+                    <i class="bi bi-person"></i>
+                    Client: Upwork Client
+                    <span class="text-uppercase fw-bold">Upwork Client</span>
+                  </div>
+                  <div class="col-12 col-sm-12 mb-2 text-center">
+                    <div>
+                      <i class="bi bi-code-slash"></i>
+                      Tech:
+                    </div>
+                    <span class="text-uppercase fw-bold"
+                      >Html,Sass,Angular,Bootstrap,primeNg,Full-Calendar,Airtable,Hostinger</span
+                    >
+                  </div>
+                  <div class="col-12 col-sm-12 mb-2 text-center">
+                    <div>
+                      <i class="bi bi-box-arrow-up-right"></i>
+                      Preview:
+                    </div>
+                    <a
+                      class="preview-link"
+                      target="_blank"
+                      href="https://jamfulapp.com/"
+                      >www.jamfulapp.com</a
+                    >
+                  </div>
+                </div>
+                <div class="row proj-pics">
+                  <div id="jam" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="4"
+                        aria-label="Slide 5"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="5"
+                        aria-label="Slide 6"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="6"
+                        aria-label="Slide 7"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="7"
+                        aria-label="Slide 8"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="8"
+                        aria-label="Slide 9"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="9"
+                        aria-label="Slide 10"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide-to="10"
+                        aria-label="Slide 11"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/jamful/1.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/2.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/3.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/4.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/5.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/6.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/7.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/8.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/9.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/10.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/jamful/11.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#jam"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center">
+        <img
+          class="img-fluid"
+          src="assets//images/rebamp/FireShot Capture 397 - Revamp - re-bamp.vercel.app.png"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">rebamp</h3>
+        <ul class="d-flex fs-4">
+          <li
+            class="d-flex flex-column align-items-center"
+            data-bs-toggle="modal"
+            data-bs-target="#rebamb"
+          >
+            <i class="bi bi-info-circle-fill"></i>
+            info
+          </li>
+          <li
+            (click)="sourceRebamppopup()"
+            class="d-flex flex-column align-items-center"
+          >
+            <i class="bi bi-file-code-fill"></i>code
+          </li>
+          <li
+            (click)="liveRebamppopup()"
+            class="d-flex flex-column align-items-center"
+          >
+            <i class="bi bi-eye-fill"></i> live
+          </li>
+        </ul>
+        <div
+          class="modal fade"
+          id="rebamb"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center text-uppercase">
+                <h1 class="modal-title fs-4 fs-3 w-100" id="exampleModalLabel">
+                  ReBamb
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row proj-info">
+                  <div class="col-12 col-sm-6 mb-2 text-center">
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                    Project:
+                    <span class="text-uppercase fw-bold">ReBamb</span>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-2 text-center">
+                    <i class="bi bi-person"></i>
+                    Client: Upwork Client
+                    <span class="text-uppercase fw-bold">Upwork Client</span>
+                  </div>
+                  <div class="col-12 col-sm-12 mb-2 text-center">
+                    <div>
+                      <i class="bi bi-code-slash"></i>
+                      Tech:
+                    </div>
+                    <span class="text-uppercase fw-bold"
+                      >Html,Sass,Angular,Bootstrap,primeNg</span
+                    >
+                  </div>
+                  <div class="col-12 col-sm-12 mb-2 text-center">
+                    <div>
+                      <i class="bi bi-box-arrow-up-right"></i>
+                      Preview:
+                    </div>
+                    <a
+                      class="preview-link"
+                      target="_blank"
+                      href="https://re-bamp.vercel.app/"
+                      >www.re-bamp.vercel.app</a
+                    >
+                  </div>
+                </div>
+                <div class="row proj-pics">
+                  <div
+                    id="re-bamp"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#re-bamp"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#re-bamp"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#re-bamp"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#re-bamp"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#re-bamp"
+                        data-bs-slide-to="4"
+                        aria-label="Slide 5"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#re-bamp"
+                        data-bs-slide-to="5"
+                        aria-label="Slide 6"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/rebamp/1.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/rebamp/2.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/rebamp/3.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/rebamp/4.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/rebamp/5.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/rebamp/6.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#re-bamp"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#re-bamp"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center">
+        <img
+          class="img-fluid"
           src="assets/images/pmclaim/FireShot Capture 225 - PmClaim - mypmclaim.com.png"
           alt=""
         />
